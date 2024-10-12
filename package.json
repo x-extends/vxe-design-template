@@ -1,5 +1,6 @@
 {
   "name": "vxe-design-template",
+  "description": "Vxe 可视化设计器模板",
   "private": true,
   "version": "4.0.0",
   "type": "module",
