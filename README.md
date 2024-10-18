@@ -25,11 +25,40 @@
     * formDesign 设计器渲染器（设计器控件存放这里）
     * table 表格渲染器（单元格渲染存放这里）
 
+## 克隆代码
+```
+git clone https://gitee.com/x-extends/vxe-design-template.git
+```
+或
+```
+git clone https://github.com/x-extends/vxe-design-template.git
+```
+
+### 切换目录
+```
+cd vxe-design-template
+```
+
+### 设置镜像源(可忽略)
+```
+npm config set registry https://registry.npmmirror.com
+```
+
+### 更新依赖
+```
+npm run update
+```
+
+### 运行项目
+```
+npm run serve
+```
+
 ## Contributors
 
 Thank you to everyone who contributed to this project.
 
-[![vxe-admin-template](https://contrib.rocks/image?repo=x-extends/vxe-admin-template)](https://github.com/x-extends/vxe-admin-template/graphs/contributors)
+[![vxe-design-template](https://contrib.rocks/image?repo=x-extends/vxe-design-template)](https://github.com/x-extends/vxe-design-template/graphs/contributors)
 
 ## License
 
