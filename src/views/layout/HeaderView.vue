@@ -6,7 +6,7 @@
     <div class="header-right">
       <span class="right-item">
         <vxe-link icon="vxe-icon-github-fill" href="https://github.com/x-extends/vxe-form-design-template" target="_blank">Github</vxe-link>
-        <vxe-link href="https://gitee.com/x-extends/vxe-form-design-template" target="_blank">
+        <vxe-link href="https://gitee.com/x-extends/vxe-design-template" target="_blank">
           <vxe-icon status="error" name="gitee-fill"></vxe-icon>
           <span>Gitee</span>
         </vxe-link>
