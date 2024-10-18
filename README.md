@@ -16,6 +16,14 @@
 
 👉 [点击查看 v4.x](https://vxeui.com/design-template/)  
 
+## 目录说明
+
+* plugins
+  * vxe
+    * form 表单渲染器（表单渲染存放这里）
+    * formDesign 设计器渲染器（设计器控件存放这里）
+    * table 表格渲染器（单元格渲染存放这里）
+
 ## Contributors
 
 Thank you to everyone who contributed to this project.

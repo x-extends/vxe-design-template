@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import { RouteLocationNormalizedLoadedGeneric } from 'vue-router'
 import { VxeUI, VxeGlobalThemeName, VxeGlobalI18nLocale } from 'vxe-pc-ui'
 
 const currTheme = (localStorage.getItem('APP_THEME') || 'light') as VxeGlobalThemeName
@@ -59,6 +60,10 @@ export const useAppStore = defineStore('app', {
      */
     reloadPage () {
       this.pageKey++
+    },
+    updatePageTitle (route: RouteLocationNormalizedLoadedGeneric) {
+      const currTitle = String(route.meta?.title || '')
+      document.title = [currTitle, 'Vxe'].join(' - ')
     }
   }
 })

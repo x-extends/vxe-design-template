@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import { routeConfigs } from './config'
+import { useAppStore } from '@/store/app'
 import { useUserStore } from '@/store/user'
 import { routeToMenuName } from '@/utils'
 import NProgress from 'nprogress'
@@ -14,6 +15,7 @@ router.beforeEach(() => {
 })
 
 router.afterEach((to) => {
+  const appStore = useAppStore()
   const userStore = useUserStore()
   // 更新页签
   userStore.updateUserTabs({
@@ -23,6 +25,8 @@ router.afterEach((to) => {
     query: to.query,
     params: to.params
   })
+  // 更新标题
+  appStore.updatePageTitle(to)
   NProgress.done()
 })
 

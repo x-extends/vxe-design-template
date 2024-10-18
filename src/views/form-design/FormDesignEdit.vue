@@ -31,7 +31,9 @@ const formDesignWidgets = ref<VxeFormDesignPropTypes.Widgets>([
       'VxeDatePicker',
       'VxeSelect',
       'VxeSwitch',
-      'VxeRadioGroup', 'VxeCheckboxGroup'
+      'VxeRadioGroup', 'VxeCheckboxGroup',
+      'VxeRate', 'VxeSlider',
+      'VxeUploadImage', 'VxeUploadFile'
     ]
   },
   {
