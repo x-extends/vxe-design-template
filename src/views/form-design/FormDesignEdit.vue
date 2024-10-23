@@ -46,6 +46,7 @@ const formDesignWidgets = ref<VxeFormDesignPropTypes.Widgets>([
   {
     group: 'advanced',
     children: [
+      'WangEditorWidget'
     ]
   },
   {
