@@ -53,6 +53,11 @@ npm run update
 npm run serve
 ```
 
+### 打包zip
+```
+npm run build:zip
+```
+
 ## Contributors
 
 Thank you to everyone who contributed to this project.
