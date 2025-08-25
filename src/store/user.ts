@@ -22,7 +22,9 @@ export const useUserStore = defineStore('user', {
           icon: 'vxe-icon-feedback',
           name: '2',
           title: '列表设计器',
-          children: []
+          children: [
+            // { icon: 'vxe-icon-feedback', title: '列表设计', name: 'ListDesignEdit', routerLink: { name: 'ListDesignEdit' } }
+          ]
         },
         {
           icon: 'vxe-icon-feedback',

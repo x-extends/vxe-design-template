@@ -32,6 +32,20 @@ export const routeConfigs: Array<RouteRecordRaw> = [
     ]
   },
   {
+    path: '/list-design',
+    component: UserLayout,
+    children: [
+      {
+        path: 'listEdit',
+        name: 'ListDesignEdit',
+        component: () => import('../views/list-design/ListDesignEdit.vue'),
+        meta: {
+          title: '列表设计'
+        }
+      }
+    ]
+  },
+  {
     path: '/404',
     name: 'PageError404',
     component: () => import('../views/error/PageError404.vue'),

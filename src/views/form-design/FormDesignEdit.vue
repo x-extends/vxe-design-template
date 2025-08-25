@@ -1,5 +1,10 @@
 <template>
   <PageView>
+    <vxe-tip status="success" title="表单设计器步骤">
+      <div>第一步，拖拽创建可视化表单 JSON，再传给列表设计器</div>
+      <div>第二步，根据 Form JSON 生成表单视图</div>
+    </vxe-tip>
+
     <vxe-form-design ref="formDesignRef" :widgets="formDesignWidgets" height="100%">
       <template #extra>
         <vxe-button status="error" @click="clearEvent">清空</vxe-button>
