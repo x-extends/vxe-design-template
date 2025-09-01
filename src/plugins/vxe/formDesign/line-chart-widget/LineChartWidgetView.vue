@@ -10,7 +10,7 @@ import { VxeUI, VxeGlobalRendererHandles } from 'vxe-pc-ui'
 import { FormDesignWidgetLineChartProps } from './widget'
 import ECharts from '@/components/ECharts.vue'
 
-const { useWidgetView } = VxeUI.formDesignHandle
+const { useWidgetView } = VxeUI.formDesignHandleHandle
 
 const props = defineProps({
   renderOpts: {

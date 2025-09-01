@@ -33,13 +33,10 @@ const formDesignWidgets = ref<VxeFormDesignPropTypes.Widgets>([
   {
     group: 'base',
     children: [
-      'VxeInput', 'VxeTextarea', 'VxeNumberInput',
-      'VxeDatePicker',
-      'VxeSelect',
-      'VxeSwitch',
-      'VxeRadioGroup', 'VxeCheckboxGroup',
-      'VxeRate', 'VxeSlider',
-      'VxeUploadImage', 'VxeUploadFile'
+      'InputWidget', 'TextareaWidget', 'NumberInputWidget', 'AmountInputWidget',
+      'DateDatePickerWidget',
+      'SelectWidget',
+      'UploadFileWidget', 'UploadImageWidget'
     ]
   },
   {
@@ -66,7 +63,7 @@ onMounted(() => {
   const $formDesign = formDesignRef.value
   if ($formDesign) {
     const defData = localStorage.getItem('DATA_FormDesignEdit')
-    let defJson = { formConfig: { title: '', pcVisible: true, pcVertical: true, pcTitleBold: true, pcTitleColon: false, pcTitleAlign: '', pcTitleWidth: '', pcTitleWidthUnit: '', mobileVisible: true, mobileVertical: true, mobileTitleBold: true, mobileTitleColon: false, mobileTitleAlign: '', mobileTitleWidth: '', mobileTitleWidthUnit: '' }, widgetData: [{ id: 100270, field: 'row100270', title: '一行多列', name: 'row', required: false, hidden: false, options: { colSize: 2, colSpan: '12,12' }, children: [{ id: 100271, field: 'VxeInput100271', title: '输入框', name: 'VxeInput', required: false, hidden: false, options: { placeholder: '' }, children: [], model: { update: false, value: null } }, { id: 100272, field: 'VxeTextarea100272', title: '文本域', name: 'VxeTextarea', required: false, hidden: false, options: { placeholder: '' }, children: [], model: { update: false, value: null } }], model: { update: false, value: null } }, { id: 100275, field: 'row100275', title: '一行多列', name: 'row', required: false, hidden: false, options: { colSize: 2, colSpan: '12,12' }, children: [{ id: 100276, field: 'VxeDatePicker100276', title: '日期', name: 'VxeDatePicker', required: false, hidden: false, options: { placeholder: '', defaultValue: { type: '', value: '' } }, children: [], model: { update: false, value: null } }, { id: 100277, field: 'VxeNumberInput100277', title: '数字', name: 'VxeNumberInput', required: false, hidden: false, options: { placeholder: '' }, children: [], model: { update: false, value: null } }], model: { update: false, value: null } }, { id: 100278, field: 'VxeTextarea100278', title: '文本域', name: 'VxeTextarea', required: false, hidden: false, options: { placeholder: '' }, children: [], model: { update: false, value: null } }] }
+    let defJson = { formConfig: { title: '', pcVisible: true, pcVertical: true, pcTitleBold: true, pcTitleColon: false, pcTitleAlign: '', pcTitleWidth: '', pcTitleWidthUnit: '', mobileVisible: false, mobileVertical: true, mobileTitleBold: true, mobileTitleColon: false, mobileTitleAlign: '', mobileTitleWidth: '', mobileTitleWidthUnit: '' }, widgetData: [{ id: 100064, field: 'InputWidget100064', title: '单行输入', name: 'InputWidget', required: false, hidden: false, options: { placeholder: '请输入', maxLength: 0, showWordCount: false, clearable: true, align: '' }, children: [], model: { update: false, value: null } }, { id: 100072, field: 'row100072', title: '一行多列', name: 'row', required: false, hidden: false, options: { colSize: 2, colSpan: '12,12' }, children: [{ id: 100065, field: 'NumberInputWidget100065', title: '数值输入', name: 'NumberInputWidget', required: false, hidden: false, options: { placeholder: '请输入', clearable: true, type: 'number', controlConfig: { showButton: true, layout: 'right' }, digits: 2, min: null, max: null, step: null, align: '' }, children: [], model: { update: false, value: null } }, { id: 100066, field: 'AmountInputWidget100066', title: '金额输入', name: 'AmountInputWidget', required: false, hidden: false, options: { placeholder: '请输入', clearable: true, controlConfig: { showButton: true, layout: 'right' }, digits: 2, min: null, max: null, step: null, showCurrency: true, align: '' }, children: [], model: { update: false, value: null } }], model: { update: false, value: null } }, { id: 100067, field: 'TextareaWidget100067', title: '多行输入', name: 'TextareaWidget', required: false, hidden: false, options: { placeholder: '请输入', showWordCount: false, minRows: 2, maxRows: 4, clearable: true }, children: [], model: { update: false, value: null } }, { id: 100069, field: 'UploadFileWidget100069', title: '上传附件', name: 'UploadFileWidget', required: false, hidden: false, options: { buttonText: '', multiple: false, limitCount: 20, limitSize: 50 }, children: [], model: { update: false, value: null } }, { id: 100068, field: 'UploadImageWidget100068', title: '上传图片', name: 'UploadImageWidget', required: false, hidden: false, options: { buttonText: '', multiple: false, limitCount: 9, limitSize: 3 }, children: [], model: { update: false, value: null } }] }
     if (defData) {
       try {
         defJson = JSON.parse(defData)
