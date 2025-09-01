@@ -11,7 +11,7 @@ import { VxeUI, VxeGlobalRendererHandles } from 'vxe-pc-ui'
 import { FormDesignWidgetUpdateTimeProps } from './widget'
 import XEUtils from 'xe-utils'
 
-const { useWidgetView } = VxeUI.formDesignHandleHandle
+const { useWidgetView } = VxeUI.formDesignHandle
 
 const props = defineProps({
   renderOpts: {

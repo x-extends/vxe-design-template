@@ -19,7 +19,7 @@ import { ref, PropType } from 'vue'
 import { VxeUI, VxeGlobalRendererHandles } from 'vxe-pc-ui'
 import { FormDesignWidgetUpdateTimeProps } from './widget'
 
-const { useWidgetView } = VxeUI.formDesignHandleHandle
+const { useWidgetView } = VxeUI.formDesignHandle
 
 const props = defineProps({
   renderOpts: {

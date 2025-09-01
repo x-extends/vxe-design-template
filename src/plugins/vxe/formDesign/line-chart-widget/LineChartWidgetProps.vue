@@ -16,7 +16,7 @@ import { PropType } from 'vue'
 import { VxeUI, VxeGlobalRendererHandles } from 'vxe-pc-ui'
 import { FormDesignWidgetLineChartProps } from './widget'
 
-const { useWidgetView } = VxeUI.formDesignHandleHandle
+const { useWidgetView } = VxeUI.formDesignHandle
 
 const props = defineProps({
   renderOpts: {
