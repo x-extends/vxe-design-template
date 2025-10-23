@@ -4,7 +4,7 @@ import router from './router'
 import i18n from './i18n'
 import pinia from './store'
 
-import VxeUIAll from 'vxe-pc-ui'
+import VxeUIBase from 'vxe-pc-ui'
 import 'vxe-pc-ui/lib/style.css'
 
 import VxeTable from 'vxe-table'
@@ -22,4 +22,4 @@ const app = createApp(App)
 
 app.component('PageView', PageView)
 
-app.use(router).use(i18n).use(pinia).use(VxeUIAll).use(VxeTable).use(VxeUIDesign).mount('#app')
+app.use(router).use(i18n).use(pinia).use(VxeUIBase).use(VxeTable).use(VxeUIDesign).mount('#app')
