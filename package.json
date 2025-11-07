@@ -13,7 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vxe-ui/plugin-render-wangeditor": "^4.0.2",
+    "@vxe-ui/plugin-render-wangeditor": "^4.0.5",
     "axios": "^1.7.2",
     "echarts": "^5.5.1",
     "nprogress": "^0.2.0",
