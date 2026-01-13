@@ -16,6 +16,7 @@ export const useAppStore = defineStore('app', {
       theme: currTheme,
       language: currLanguage,
       collapseAside: false,
+      pubApiBaseUrl: import.meta.env.VITE_APP_PUBLIC_API_URL,
       pageKey: 0
     }
   },

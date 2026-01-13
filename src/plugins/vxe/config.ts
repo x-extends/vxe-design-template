@@ -72,7 +72,7 @@ VxeUI.setConfig({
       }).then((res) => {
         return {
           ...res.data,
-          url: `${import.meta.env.VITE_APP_BASE_API}/myResource/upload/${res.data.id}`
+          url: `${import.meta.env.VITE_APP_PUBLIC_API_URL}/myResource/upload/${res.data.id}`
         }
       })
     }
