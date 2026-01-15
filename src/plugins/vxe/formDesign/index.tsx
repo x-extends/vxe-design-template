@@ -1,3 +1,5 @@
+//  表单设计器 - 自定义表单
+import './my-custom-form'
 
 //  表单设计器 - 基础
 import './input-widget'
