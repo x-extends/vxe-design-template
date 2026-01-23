@@ -24,7 +24,7 @@
     "vxe-pc-ui": "~4.12.10",
     "vxe-table": "~4.17.42",
     "vxe-design": "^4.1.1",
-    "xe-utils": "^3.9.0"
+    "xe-utils": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
