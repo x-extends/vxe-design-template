@@ -72,8 +72,7 @@ updateSelectMenu()
     ::-webkit-scrollbar-thumb {
       background-color: #bfbfbf;
     }
-    ::-webkit-scrollbar-thumb:hover,
-    ::-webkit-scrollbar-thumb:action {
+    ::-webkit-scrollbar-thumb:hover {
       background-color: #787878;
     }
   }
@@ -88,8 +87,7 @@ updateSelectMenu()
     ::-webkit-scrollbar-thumb {
       background-color: #bfbfbf;
     }
-    ::-webkit-scrollbar-thumb:hover,
-    ::-webkit-scrollbar-thumb:action {
+    ::-webkit-scrollbar-thumb:hover {
       background-color: #A3A6AD;
     }
   }
