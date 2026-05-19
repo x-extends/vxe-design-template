@@ -13,7 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vxe-ui/plugin-render-wangeditor": "^4.0.5",
+    "@vxe-ui/plugin-render-wangeditor": "^4.3.1",
     "axios": "^1.7.2",
     "echarts": "^5.5.1",
     "nprogress": "^0.2.0",
@@ -23,7 +23,7 @@
     "vue-router": "~4.5.0",
     "vxe-pc-ui": "~4.14.15",
     "vxe-table": "~4.18.13",
-    "vxe-design": "^4.1.2",
+    "vxe-design": "^4.1.3",
     "xe-utils": "^4.0.8"
   },
   "devDependencies": {

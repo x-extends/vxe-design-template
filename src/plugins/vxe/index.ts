@@ -1,4 +1,4 @@
-import VxeUI from 'vxe-pc-ui'
+import { VxeUI } from 'vxe-pc-ui'
 
 import VxeUIPluginRenderWangEditor from '@vxe-ui/plugin-render-wangeditor'
 import '@vxe-ui/plugin-render-wangeditor/dist/style.css'

@@ -9,7 +9,7 @@ VxeUI.setConfig({
   permissionMethod () {
     return {
       visible: true,
-      disabled: true
+      disabled: false
     }
   },
 

@@ -7,7 +7,7 @@ import pinia from './store'
 import VxeUIBase from 'vxe-pc-ui'
 import 'vxe-pc-ui/lib/style.css'
 
-import VxeTable from 'vxe-table'
+import VxeUITable from 'vxe-table'
 import 'vxe-table/lib/style.css'
 
 import VxeUIDesign from 'vxe-design'
@@ -22,4 +22,4 @@ const app = createApp(App)
 
 app.component('PageView', PageView)
 
-app.use(router).use(i18n).use(pinia).use(VxeUIBase).use(VxeTable).use(VxeUIDesign).mount('#app')
+app.use(router).use(i18n).use(pinia).use(VxeUIBase).use(VxeUITable).use(VxeUIDesign).mount('#app')
