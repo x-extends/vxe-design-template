@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@vxe-ui/plugin-render-wangeditor": "^4.3.1",
-    "axios": "1.7.2",
+    "axios": "~1.20.0",
     "echarts": "^5.5.1",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
