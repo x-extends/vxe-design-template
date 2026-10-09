@@ -4,15 +4,16 @@
       <img class="logo-img" src="@/assets/logo.png" />
       <vxe-link v-if="!appStore.collapseAside" href="/" class="logo-title">Vxe 设计器模板v4</vxe-link>
     </div>
-    <div class="aside-menu">
-      <VxeMenu v-model="currRouteName" :options="userStore.menuTreeList" collapse-fixed />
-    </div>
+    <vxe-scrollbar class="aside-menu" view-inner-class-name="aside-menu-inner" :y-config="yConfig" :x-config="xConfig">
+      <vxe-menu v-model="currRouteName" :options="userStore.menuTreeList" collapse-fixed />
+    </vxe-scrollbar>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ref, watch } from 'vue'
+import { ref, reactive, watch } from 'vue'
 import { useRoute, onBeforeRouteUpdate } from 'vue-router'
+import { VxeScrollbarPropTypes } from 'vxe-pc-ui'
 import XEUtils from 'xe-utils'
 import { useAppStore } from '@/store/app'
 import { useUserStore } from '@/store/user'
@@ -22,6 +23,14 @@ const appStore = useAppStore()
 const userStore = useUserStore()
 
 const currRouteName = ref('')
+
+const xConfig = reactive<VxeScrollbarPropTypes.XConfig>({
+  visible: 'hidden'
+})
+
+const yConfig = reactive<VxeScrollbarPropTypes.YConfig>({
+  autoHide: true
+})
 
 const updateSelectMenu = () => {
   XEUtils.eachTree(userStore.menuTreeList, item => {
@@ -46,7 +55,7 @@ watch(() => userStore.menuTreeList, () => {
 updateSelectMenu()
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .aside-view {
   display: flex;
   flex-direction: column;
