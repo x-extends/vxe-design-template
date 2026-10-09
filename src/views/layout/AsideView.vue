@@ -127,4 +127,7 @@ updateSelectMenu()
   overflow-y: auto;
   overflow-x: hidden;
 }
+.aside-menu-inner {
+  height: 100%;
+}
 </style>
