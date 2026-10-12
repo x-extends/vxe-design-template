@@ -8,7 +8,7 @@
         <HeaderView />
         <TopView />
       </vxe-layout-header>
-      <vxe-layout-body :key="appStore.pageKey" class="page-body" show-backtop>
+      <vxe-layout-body :key="appStore.pageKey" class="page-body" use-scrollbar show-backtop padding>
         <RouterView />
       </vxe-layout-body>
       <vxe-layout-footer>
@@ -35,7 +35,6 @@ const appStore = useAppStore()
 }
 
 .page-body {
-  padding: 16px 16px 0 16px;
   background-color: var(--page-layout-background-color);
 }
 </style>
