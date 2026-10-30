@@ -8,10 +8,13 @@
         :options="tabList"
         :show-close="tabList.length > 1"
         @tab-click="tabClickEvent"
-        @tab-close="tabCloseEvent">
+        @tab-close="tabCloseEvent"
+      >
         <template #tab-suffix>
-          <vxe-pulldown :options="tabOptions" trigger="click" show-popup-shadow transfer
-            @option-click="tabOptionClickEvent">
+          <vxe-pulldown
+            :options="tabOptions" trigger="click" show-popup-shadow transfer
+            @option-click="tabOptionClickEvent"
+          >
             <template #default>
               <vxe-button mode="text" icon="vxe-icon-ellipsis-v"></vxe-button>
             </template>

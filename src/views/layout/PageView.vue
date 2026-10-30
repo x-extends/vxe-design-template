@@ -1,7 +1,7 @@
 <template>
   <div :key="currViewKey" :class="['page-view', {'is-full': isFull, 'is-pg': padding, 'is-bg': background}]">
     <slot></slot>
-    <vxe-loading :modelValue="loading" :text="loadingText"></vxe-loading>
+    <vxe-loading :model-value="loading" :text="loadingText"></vxe-loading>
   </div>
 </template>
 

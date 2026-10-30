@@ -4,7 +4,8 @@
     title-bold
     title-overflow
     span="24"
-    :data="widgetOptions">
+    :data="widgetOptions"
+  >
     <vxe-form-item title="控件名称">
       <vxe-input v-model="currWidget.title"></vxe-input>
     </vxe-form-item>

@@ -6,7 +6,8 @@
       :options="carouselList"
       :show-indicators="widgetOptions.showIndicators"
       :vertical="widgetOptions.vertical"
-      :auto-play="widgetOptions.autoPlay">
+      :auto-play="widgetOptions.autoPlay"
+    >
     </vxe-carousel>
   </vxe-form-item>
 </template>

@@ -20,7 +20,7 @@
       </span>
 
       <span class="right-item">
-        <vxe-pulldown :options="langPullList" trigger="click" class="right-item-comp" show-popup-shadow transfer  @option-click="langOptionClickEvent">
+        <vxe-pulldown :options="langPullList" trigger="click" class="right-item-comp" show-popup-shadow transfer @option-click="langOptionClickEvent">
           <vxe-button mode="text" icon="vxe-icon-language-switch" :content="langLabel"></vxe-button>
         </vxe-pulldown>
       </span>
