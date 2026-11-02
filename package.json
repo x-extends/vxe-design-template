@@ -58,7 +58,7 @@
     "vue-tsc": "~3.3.13"
   },
   "allowScripts": {
-    "@parcel/watcher@2.6.0": true,
-    "vue-demi@0.14.10": true
+    "@parcel/watcher": true,
+    "vue-demi": true
   }
 }
